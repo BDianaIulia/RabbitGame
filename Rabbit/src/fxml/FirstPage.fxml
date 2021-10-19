@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FirstPageController">
+   <center>
+      <AnchorPane prefHeight="341.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="110.0" layoutY="51.0" prefHeight="251.0" prefWidth="207.0">
+               <children>
+                  <Button fx:id="ResumeButton" alignment="CENTER" mnemonicParsing="false" onAction="#ResumeButtonPressed" prefHeight="49.0" prefWidth="161.0" text="Resume">
+                     <effect>
+                        <Lighting diffuseConstant="1.5" specularConstant="0.5" specularExponent="30.0" surfaceScale="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="#70dd92" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="Start_button" alignment="CENTER" mnemonicParsing="false" onAction="#Start_button_pressed" prefHeight="49.0" prefWidth="161.0" text="Start">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.5" specularConstant="0.5" specularExponent="30.0" surfaceScale="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="#a9e58c" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="Info_button" alignment="CENTER" mnemonicParsing="false" onAction="#Info_button_pressed" prefHeight="49.0" prefWidth="161.0" text="Info">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.5" specularConstant="0.5" specularExponent="30.0" surfaceScale="2.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant color="#e4d25e" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SecondPageController">
+   <rowConstraints>
+      <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="128.0" />
+      <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="128.0" />
+      <RowConstraints maxHeight="335.0" minHeight="10.0" prefHeight="136.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="136.0" minHeight="10.0" prefHeight="136.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.0" minWidth="10.0" prefWidth="72.0" />
+      <ColumnConstraints maxWidth="263.0" minWidth="10.0" prefWidth="263.0" />
+      <ColumnConstraints maxWidth="133.0" minWidth="10.0" prefWidth="65.0" />
+   </columnConstraints>
+   <children>
+      <TextField fx:id="Length_grid" alignment="CENTER" onAction="#Length_grid_action" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Text fill="#972121" stroke="#8a3535" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the length of the grid:" textAlignment="CENTER" wrappingWidth="263.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+   </children>
+</GridPane>

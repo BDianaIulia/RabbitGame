@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox fx:id="box" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="40.0" right="40.0" top="40.0" />
+         </BorderPane.margin>
+         <children>
+            <ImageView fx:id="WinnerImageView" fitHeight="139.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="60.0" />
+               </VBox.margin>
+            </ImageView>
+            <TextField fx:id="Title" alignment="CENTER" editable="false" focusTraversable="false" prefHeight="26.0" prefWidth="320.0" style="-fx-background-color: transparent;" text="Best Basket Score">
+               <font>
+                  <Font name="Showcard Gothic" size="20.0" />
+               </font>
+               <effect>
+                  <Reflection topOffset="-10.0" />
+               </effect>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="BestScore" alignment="CENTER" editable="false" prefHeight="27.0" prefWidth="320.0" style="-fx-background-color: transparent;" text="87">
+               <font>
+                  <Font name="Showcard Gothic" size="20.0" />
+               </font>
+               <effect>
+                  <Reflection topOffset="-10.0" />
+               </effect>
+            </TextField>
+            <TextField fx:id="TotalEggs" alignment="CENTER" editable="false" layoutX="10.0" layoutY="149.0" prefHeight="26.0" prefWidth="320.0" style="-fx-background-color: transparent;" text="from 10 total eggs collected">
+               <font>
+                  <Font name="Showcard Gothic" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <effect>
+                  <Reflection topOffset="-10.0" />
+               </effect>
+            </TextField>
+            <TextField fx:id="NumberOfTurns" alignment="CENTER" editable="false" layoutX="10.0" layoutY="223.0" prefHeight="26.0" prefWidth="320.0" style="-fx-background-color: transparent;" text="in 5 turns">
+               <font>
+                  <Font name="Showcard Gothic" size="15.0" />
+               </font>
+               <effect>
+                  <Reflection topOffset="-10.0" />
+               </effect>
+            </TextField>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <Button fx:id="BackButton" mnemonicParsing="false" onAction="#BackButtonPressed" prefHeight="35.0" prefWidth="121.0" style="-fx-background-radius: 20;" text="Back" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="40.0" top="10.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Modern No. 20" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#226106" />
+         </effect>
+      </Button>
+   </bottom>
+</BorderPane>

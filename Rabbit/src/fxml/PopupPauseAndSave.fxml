@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane fx:id="anchorPane" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </BorderPane.margin>
+         <children>
+            <VBox fx:id="box" layoutX="80.0" layoutY="50.0" prefHeight="200.0" prefWidth="140.0">
+               <children>
+                  <Button fx:id="ContinueButton" mnemonicParsing="false" onAction="#ContinueButtonPressed" prefHeight="40.0" prefWidth="143.0" style="-fx-background-radius: 70;" text="Continue" textFill="#33473d">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Tw Cen MT" size="20.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                           <light>
+                              <Light.Distant color="#9cea84" />
+                           </light>
+                           <bumpInput>
+                              <InnerShadow blurType="GAUSSIAN" choke="0.52" color="#dd4343" height="77.09" radius="53.612500000000004" width="139.36" />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </Button>
+                  <Button fx:id="SaveButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#SaveButtonPressed" prefHeight="40.0" prefWidth="149.0" style="-fx-background-radius: 70;" text="Save" textFill="#33473d">
+                     <VBox.margin>
+                        <Insets top="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Tw Cen MT Italic" size="20.0" />
+                     </font>
+                     <effect>
+                        <Lighting bumpInput="$null" diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                           <light>
+                              <Light.Distant color="#e4cb5a" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <effect>
+      <InnerShadow color="#5ae56e" />
+   </effect>
+</BorderPane>
